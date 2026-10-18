@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Monde en Bref</title><style>body{margin:0;background:#050a1f;color:#e8eefc;font-family:system-ui,Arial,sans-serif;line-height:1.6}main{max-width:760px;margin:0 auto;padding:28px 20px 60px}h1{font-size:30px;margin:10px 0}h2{margin-top:32px;color:#4cc9ff}a{color:#4cc9ff}.btn{display:inline-block;background:#00b4ff;color:#021;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;margin:12px 0}.card{background:#0c1636;border:1px solid #1b2a5c;border-radius:14px;padding:16px 18px;margin:14px 0}img.logo{width:84px;height:auto}footer{margin-top:40px;font-size:14px;opacity:.7}nav a{margin-right:14px}</style></head><body><main>
+<img class="logo" src="logo.png" alt="Le Monde en Bref logo">
+<h1>Le Monde en Bref</h1>
+<p>Le Monde en Bref is a small publishing tool used by one creator (the owner of the TikTok account <b>@Lemonde_enbref</b>) to prepare short daily world-news photo carousels and send them to <b>their own TikTok inbox as drafts</b>. The creator then reviews, edits and publishes each draft manually inside TikTok.</p>
+<div class="card"><b>En français :</b> outil personnel qui prépare chaque jour des carrousels photo d'actualité mondiale et les envoie en <b>brouillon</b> dans la boîte de réception TikTok du créateur, qui relit et publie lui-même.</div>
+<h2>How it works</h2>
+<ol>
+<li>Every night, the tool reads public news feeds and writes 3 short photo carousels (images + caption).</li>
+<li>The creator connects their TikTok account once with <b>Login Kit</b> (scopes: <code>user.info.basic</code> and <code>video.upload</code>).</li>
+<li>The tool uploads each carousel to the creator's TikTok inbox as a <b>draft</b> (Content Posting API, upload flow). Nothing is published automatically.</li>
+<li>The creator opens TikTok, reviews the draft, adds music if wanted, and publishes it themselves. AI-generated content is labelled as such.</li>
+</ol>
+<h2>Connect</h2>
+<p>Only the account owner uses this tool.</p>
+<a class="btn" href="https://telegram-relais.sullypicq2.workers.dev/tiktok/login">Connect TikTok</a>
+<h2>Data</h2>
+<p>The tool stores only the authorization tokens of the connected account, used solely to upload drafts. It does not scrape TikTok, does not read other users' data and does not post without the creator's review. See the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Service</a>.</p>
+<footer><nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>Contact: TikTok account @Lemonde_enbref</footer>
+</main></body></html>
